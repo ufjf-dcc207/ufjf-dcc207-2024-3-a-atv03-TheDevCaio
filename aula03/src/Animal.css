@@ -9,7 +9,7 @@
     "icone nome nome"
     "icone peso peso"
     "icone, extincao";
-}
+
 
 .icone{
     grid-area: icone;
@@ -34,4 +34,5 @@
     color: white;
     font-size: 0.75;
     place-content: center;
+}
 }
