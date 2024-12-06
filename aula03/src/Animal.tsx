@@ -15,11 +15,10 @@ export default function Animal( {
 }: AnimalProps){
 return (
     <div className = "animal">
-    <div>{icone}</div>
-    <div>{nome}</div>  
-    <div>{peso.toLocaleString()}</div>
-    <div>Em Extinção: {emExtincao}</div>
-    <div>{icone}</div>
+    <div className = "icone">{icone}</div>
+    <div className = "nome">{nome}</div>  
+    <div className = "peso">{peso.toLocaleString()}</div>
+    <div className = "extincao">Em Extinção: {emExtincao}</div>
     </div>
 )
 }
