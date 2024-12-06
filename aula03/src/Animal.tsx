@@ -7,6 +7,19 @@ interface AnimalProps {
     emExtincao?: boolean;
 }
 
-export default function Animal() {
-    return <div className="animal">Animal</div>;
+export default function Animal( {
+   icone = "?",
+   nome = "desconhecido",
+   peso = 0.0,
+   emExtincao = false,
+}: AnimalProps){
+return (
+    <div className = "animal">
+    <div>{icone}</div>
+    <div>{nome}</div>  
+    <div>{peso.toLocaleString()}</div>
+    <div>Em Extinção: {emExtincao}</div>
+    <div>{icone}</div>
+    </div>
+)
 }
